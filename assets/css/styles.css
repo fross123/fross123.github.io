@@ -1,0 +1,55 @@
+.gradient {
+  background: #38373b;
+  color: #ffffff;
+}
+
+body {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.portfolio-block {
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+@media (min-width:768px) {
+  .portfolio-block {
+    padding-bottom: 40px;
+    padding-top: 100px;
+  }
+}
+
+.portfolio-block.cv {
+  padding-top: 3em;
+}
+
+.btn-primary {
+  background: #214a80;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  /*margin-top: 26px;*/
+  text-shadow: none;
+  outline: none;
+}
+
+.btn-primary:active {
+  background: #214a80;
+  outline: none;
+}
+
+.special-skill-item .icon {
+  text-align: center;
+  font-size: 50px;
+  background-color: #214a80;
+  color: #fff;
+  height: 70px;
+  width: 70px;
+  line-height: 69px;
+  display: inline-block;
+  border-radius: 50%;
+}
+

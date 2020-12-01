@@ -53,3 +53,34 @@ body {
   border-radius: 50%;
 }
 
+.privacy-banner {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 0;
+  background: black;
+  color: #ffffff;
+  border-color: black;
+  border-radius: 0px;
+}
+
+.privacy-banner .close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
+.privacy-banner a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.is-visible, .blc {
+  color: gery;
+}
+

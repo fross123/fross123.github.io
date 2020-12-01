@@ -84,3 +84,13 @@ body {
   color: gery;
 }
 
+.portfolio-navbar.fixed-top + .page {
+  padding-top: 3.5em;
+}
+
+@media (min-width:576px) {
+  .portfolio-navbar.fixed-top + .page {
+    padding-top: 5rem;
+  }
+}
+

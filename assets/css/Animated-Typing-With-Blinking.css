@@ -62,7 +62,7 @@
 
 @media (max-width: 576px) {
   .animated-text {
-    transform: scale(0.5);
+    transform: scale(0.7);
     white-space: nowrap;
   }
 }

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } else {
         console.log("No last_acknowledgement -- banner displayed.");
+        document.querySelector('.privacy-banner').setAttribute('style', 'display: block;');
     }
 })
 

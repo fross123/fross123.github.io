@@ -1,12 +1,13 @@
 .gradient {
-  background: #38373b;
-  color: #ffffff;
+  /*background: #38373b;*/
+  background: url("../../assets/img/dark_texture.jpg?h=550f4dfa5761fa6002d394e36667ed01");
+  color: #e0e0e0;
 }
 
 body {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  /*font-weight: 300;*/
+  /*font-style: normal;*/
 }
 
 .portfolio-block {
@@ -39,6 +40,20 @@ body {
 .btn-primary:active {
   background: #214a80;
   outline: none;
+}
+
+.btn-outline-primary {
+  color: #214a80;
+  border-color: #214a80;
+  border-radius: 4px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #214a80;
+  border-color: #214a80;
 }
 
 .special-skill-item .icon {
@@ -92,5 +107,17 @@ body {
   .portfolio-navbar.fixed-top + .page {
     padding-top: 5rem;
   }
+}
+
+.project-card-no-image {
+  background: white;
+}
+
+.badge {
+  margin-bottom: 20px;
+}
+
+.portfolio-block.cv .group .organization {
+  border-radius: 4px;
 }
 

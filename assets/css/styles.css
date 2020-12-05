@@ -111,6 +111,7 @@ body {
 
 .project-card-no-image {
   background: white;
+  border-radius: 1em;
 }
 
 .badge {
@@ -119,5 +120,9 @@ body {
 
 .portfolio-block.cv .group .organization {
   border-radius: 4px;
+}
+
+.project-card-no-image.under-development {
+  border-top: 4px solid green;
 }
 

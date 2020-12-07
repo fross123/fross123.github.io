@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     today = new Date();
     yesterday = new Date();
-    yesterday.setDate(today.getDate()-1)
+    yesterday.setDate(today.getDate()-1);
 
     // localStorage.setItem('privacy_banner_acknowledged', yesterday);
     if (localStorage.getItem('privacy_banner_acknowledged')) {

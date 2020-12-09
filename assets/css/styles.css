@@ -77,6 +77,7 @@ body {
   color: #ffffff;
   border-color: black;
   border-radius: 0px;
+  font-size: medium;
 }
 
 .privacy-banner .close {
@@ -123,5 +124,11 @@ body {
 
 .project-card-no-image.under-development {
   border-top: 4px solid green;
+}
+
+@media (max-width: 768px) {
+  .privacy-banner {
+    font-size: small;
+  }
 }
 

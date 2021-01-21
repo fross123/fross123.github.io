@@ -16,13 +16,15 @@
     <link rel="icon" type="image/png" sizes="180x179" href="assets/img/favicon_180px.png?h=fb13f3702acf19d31b6f38de7eb5ce9a">
     <link rel="icon" type="image/png" sizes="192x191" href="assets/img/favicon_192px.png?h=2702647df9d2a762cce5e30804664c02">
     <link rel="icon" type="image/png" sizes="512x508" href="assets/img/favicon_512px.png?h=8c3ce4b43bcdf4feddb5c90530580a91">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=0a10575e1c58824abf5990e525304031">
-    <link rel="manifest" href="manifest.json?h=6d3dd0c7a9b8c41c8f3e6129225b6c14">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=220a098829144276f24c1c40ce87c40c">
+    <link rel="manifest" href="manifest.json?h=702b4d21bcf4b7ff3f7fc70900ce3942">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=9db842b3dc3336737559eb4abc0f1b3d">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Dark.css?h=80ee64242fbf88d800bea253885ff1b7">
     <link rel="stylesheet" href="assets/css/Social-Icons.css?h=32919a7d87e3ffd78cdc98bbe2458367">
@@ -43,10 +45,10 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="index_new.html"><img class="d-inline-block align-top" src="assets/img/Head%20Icon%20New_White.svg?h=207620c3cb7e4274440bbda1d92d3829" width="30" height="30" alt="head icon">Finlay Ross</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html"><img class="d-inline-block align-top" src="assets/img/Head%20Icon%20New_White.svg?h=207620c3cb7e4274440bbda1d92d3829" width="30" height="30" alt="head icon">Finlay Ross</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index_new.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -214,7 +216,7 @@
                             <div class="col-6"><span class="period">03/2020 - 11/2020</span></div>
                         </div>
                         <div class="row">
-                            <div class="col"><a class="btn btn-secondary btn-sm" role="button" href="https://certificates.cs50.io/29ba2e59-a79c-4f8b-ba0f-cf759d832b73.png?size=letter" target="_blank">View Certificate</a></div>
+                            <div class="col"><button class="btn btn-secondary btn-sm" type="button" data-target="#webCertModal" data-toggle="modal">View Certificate</button></div>
                         </div>
                         <div class="row">
                             <div class="col"><a class="btn btn-secondary btn-sm" role="button" href="https://online-learning.harvard.edu/course/cs50s-web-programming-python-and-javascript?delta=0" target="_blank">Course Description</a></div>
@@ -233,6 +235,17 @@
             </div>
         </section>
     </main>
+    <div class="modal fade" role="dialog" tabindex="-1" id="webCertModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Certificate</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"><img src="https://certificates.cs50.io/29ba2e59-a79c-4f8b-ba0f-cf759d832b73.png?size=letter" width="100%"></div>
+                <div class="modal-footer"><a class="btn btn-info" role="button" href="https://certificates.cs50.io/29ba2e59-a79c-4f8b-ba0f-cf759d832b73.png?size=letter" target="_blank">Full Size</a><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <footer class="page-footer gradient">
         <div class="container">
             <div class="links"><a href="resume.html">Resume</a><a href="contact.html">Contact me</a><a href="privacy-policy.html">Privacy Policy</a></div>
@@ -243,6 +256,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smart-forms.min.js?h=9db842b3dc3336737559eb4abc0f1b3d"></script>
+    <script src="assets/js/bs-init.js?h=969dc54771a359915bb04ad880861614"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/privacy_banner.js?h=d54505868df840d3c467507771f61505"></script>
     <script src="assets/js/theme.js?h=864622c5082aeb5e28f3b76bf829f619"></script>

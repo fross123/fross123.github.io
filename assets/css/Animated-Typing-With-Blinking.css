@@ -1,0 +1,97 @@
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  color: #214a80;
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.blc {
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.cd-headline.clip b {
+  opacity: 0;
+}
+
+.cd-headline b.is-visible {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.is-visible, .blc {
+  color: gery;
+}
+
+.animated-text {
+  transform: scale(1);
+}
+
+/* @media (min-width: 768px) {
+  .animated-text {
+    transform: scale(1.4);
+  }
+} */
+
+@media (max-width: 576px) {
+  .animated-text {
+    transform: scale(0.6);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-block.block-intro p {
+    font-size: 1em;
+  }
+}
+
+.noSelect {
+  pointer-events: none;
+}
+
+.caption.v-middle.text-center {
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #000;
+  }
+  49% {
+    color: #000;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000;
+  }
+}
+

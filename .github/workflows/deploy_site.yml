@@ -1,0 +1,27 @@
+name: Github Pages Deploy
+
+on:
+  push:
+    branches:
+        - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: rojopolis/spellcheck-github-actions@0.9.1
+        name: Spellcheck
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_assets: '.github,.spellcheck.yml,.wordlist.txt'
+          publish_dir: ./
+          allow_empty_commit: true
+          cname: www.finlayross.me
